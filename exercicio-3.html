@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <Script>
+        let numero1 = parseInt(prompt("Digite o primeiro número: "));
+        let numero2 = parseInt(prompt("Digite o segundo número: "));
+        let numero3 = parseInt(prompt("Digite o terceiro número: "));
+
+        let maiorNumero = numero1;
+
+        if (numero2 > maiorNumero) {
+            maiorNumero = numero2;
+        }
+
+        if (numero3 > maiorNumero) {
+            maiorNumero = numero3;
+        }
+
+        document.write("O maior número é: " + maiorNumero);
+    </Script>
+
+</body>
+</html>

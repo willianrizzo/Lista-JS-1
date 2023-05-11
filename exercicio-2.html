@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1>A</h1>
+    <script>
+        let nota1 = parseFloat(prompt("Digite a primeira nota: "));
+        let nota2 = parseFloat(prompt("Digite a segunda nota: "));
+
+        let media = (nota1 + nota2) / 2;
+
+        if (media === 10) {
+            document.write("Aprovado com Distinção");
+        } else if (media >= 7) {
+            document.write("Aprovado");
+        } else {
+            document.write("Reprovado");
+        }
+
+        
+    </script>
+
+</body>
+</html>

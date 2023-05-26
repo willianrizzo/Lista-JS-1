@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const nota1 = parseFloat(prompt("Digite a 1ª nota: "));
+        const nota2 = parseFloat(prompt("Digite a 2ª nota: "));
+        let letra;
+
+        const media = (nota1 + nota2) / 2;
+
+        alert("Nota do 1º semestre: " + nota1);
+        alert("Nota do 2º semestre: " + nota2);
+        alert("Média " + media)
+
+        if (media >= 9) {
+            letra = "A";
+        } else if (media >= 7.5) {
+            letra = "B";
+        } else if (media >= 6) {
+            letra = "C";
+        } else if (media >= 4) {
+            letra = "D";
+        } else {
+            letra = "E";
+        }
+
+        alert("Conceito " + conceito);
+
+        if (letra === "A" || letra === "B") {
+            alert("Aprovado");
+        } else {
+            alert("Reprovado");
+        }
+    </script>
+</body>
+
+</html>

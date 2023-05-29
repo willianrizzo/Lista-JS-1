@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <script>
+        let contagem = 0;
+
+        alert("Responda as perguntas com sim ou não.");
+
+        const resp1 = prompt("Telefonou para a vítima? (sim ou não) ").toLowerCase();
+        if (resp1 === "sim" || resp1 === "s") {
+            contagem++;
+        }
+
+        const resp2 = prompt("Esteve no local do crime? (sim ou não) ").toLowerCase();
+        if (resp2 === "sim" || resp2 === "s") {
+            contagem++;
+        }
+
+        const resp3 = prompt("Mora perto da vítima? (sim ou não) ").toLowerCase();
+        if (resp3 === "sim" || resp3 === "s") {
+            contagem++;
+        }
+
+        const resp4 = prompt("Devia para a vítima? (sim ou não) ").toLowerCase();
+        if (resp4 === "sim" || resp4 === "s") {
+            contagem++;
+        }
+
+        const resp5 = prompt("Já trabalhou com a vítima? (sim ou não) ").toLowerCase();
+        if (resp5 === "sim" || resp5 === "s") {
+            contagem++;
+        }
+
+        if (contagem === 2) {
+            alert("Você é suspeito(a) do crime.");
+        } else if (contagem >= 3 && contagem <= 4) {
+            alert("Você é cúmplice do crime.");
+        } else if (contagem === 5) {
+            alert("Você é o assassino(a)!");
+        } else {
+            alert("Você é inocente.");
+        }
+    </script>
+</body>
+
+</html>

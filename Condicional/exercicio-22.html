@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const precoGasolina = 2.5;
+        const precoAlcool = 1.9;
+
+        const tipoCombustivel = prompt(
+            "Digite o tipo de combustível (A-álcool, G-gasolina): "
+        ).toUpperCase();
+        const qtdLitros = Number(prompt("Digite a quantidade de litros vendidos: "));
+
+        let valorTotal = 0;
+
+        if (tipoCombustivel == "A") {
+            if (qtdLitros <= 20) {
+                valorTotal = qtdLitros * precoAlcool * 0.97;
+            } else {
+                valorTotal = qtdLitros * precoAlcool * 0.95;
+            }
+        } else if (tipoCombustivel == "G") {
+            if (qtdLitros <= 20) {
+                valorTotal = qtdLitros * precoGasolina * 0.96;
+            } else {
+                valorTotal = qtdLitros * precoGasolina * 0.94;
+            }
+        } else {
+            alert("Tipo de combustível inválido!");
+        }
+
+        alert(`Valor total a pagar: R$ ${valorTotal.toFixed(2)}`);
+    </script>
+</body>
+
+</html>

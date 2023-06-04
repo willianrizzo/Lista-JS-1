@@ -1,15 +1,15 @@
 let saida = "";
 
-for (let i = 1; i <= 20; i++) {
-    saida += i + "\n";
+for (let num = 1; num <= 20; num++) {
+    saida += num + "\n";
 }
 
 alert(saida);
 
 let saida2 = "";
 
-for (let i = 1; i <= 20; i++) {
-    saida2 += i + " ";
+for (let num = 1; num <= 20; num++) {
+    saida2 += num + " ";
 }
 
 alert(saida2);
